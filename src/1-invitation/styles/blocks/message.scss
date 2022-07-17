@@ -1,0 +1,14 @@
+
+.message {
+  &__text,
+  &__link {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__text {
+    margin: 16px;
+    margin-top: 24px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,17 @@
+
+.course {
+  &__body {
+    padding: 16px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #000000;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &__footer {
+    padding-bottom: 25px;
+  }
+}

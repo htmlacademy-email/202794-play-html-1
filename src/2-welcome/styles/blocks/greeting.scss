@@ -1,0 +1,32 @@
+
+.greeting {
+  background-color: #0b379b;
+
+  &__left {
+    float: left;
+  }
+
+  &__left &__inner {
+    width: 425px;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__right &__inner {
+    width: 175px;
+  }
+
+  &__title {
+    color: #13d6c3;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

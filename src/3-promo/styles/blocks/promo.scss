@@ -1,0 +1,14 @@
+
+.promo {
+  &__left {
+    float: left;
+    width: 300px;
+    border-top-left-radius: 15px;
+  }
+
+  &__right {
+    float: right;
+    width: 300px;
+    border-top-right-radius: 15px;
+  }
+}

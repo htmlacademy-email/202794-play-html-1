@@ -1,0 +1,23 @@
+
+.social {
+  &__title {
+    margin: 6px 0;
+    color: #333333;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__label {
+    color: #000000;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__items {
+    font-size: 0;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 8px;
+  }
+}

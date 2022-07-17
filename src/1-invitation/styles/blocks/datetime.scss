@@ -1,0 +1,22 @@
+
+.datetime {
+  &__wrap {
+    padding: 8px;
+  }
+
+  &__left {
+    float: left;
+  }
+
+  &__left &__inner {
+    width: 192px;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__right &__inner {
+    width: 392px;
+  }
+}

@@ -1,0 +1,29 @@
+
+.product {
+  &__title {
+    margin: 8px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__price {
+    color: #000000;
+    margin: 8px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__price--old {
+    color: #828282;
+    text-decoration: line-through;
+  }
+
+  &__price--new &__value {
+    color: #ff4b33;
+  }
+
+  &__footer {
+    padding-bottom: 25px;
+  }
+}

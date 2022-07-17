@@ -1,0 +1,16 @@
+
+.header {
+  &__wrap {
+    padding-top: 30px;
+  }
+
+  &__left {
+    float: left;
+    width: 140px;
+  }
+
+  &__right {
+    float: right;
+    width: 300px;
+  }
+}

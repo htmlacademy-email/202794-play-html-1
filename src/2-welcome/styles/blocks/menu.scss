@@ -1,0 +1,25 @@
+
+.menu {
+  &__items {
+    padding: 26px 16px;
+  }
+
+  &__item {
+    float: left;
+  }
+
+  &__item:last-child {
+    float: right;
+  }
+
+  &__box {
+    width: 142px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
