@@ -19,15 +19,15 @@ function html() {
       applyStyleTags: true,
       applyLinkTags: true,
       preserveMediaQueries: true,
-      applyWidthAttributes: true,
-      applyTableAttributes: true,
+      applyWidthAttributes: false,
+      applyTableAttributes: false,
       removeHtmlSelectors: true,
     }))
     .pipe(gulp.dest('build/'))
 }
 
 function styles() {
-  return gulp.src(['src/**/*.scss', '!src/sass/**'], { base: 'src' })
+  return gulp.src(['src/**/styles/**/*.scss', '!src/sass/**'], { base: 'src' })
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('build/'))
 }
@@ -50,7 +50,7 @@ function clean() {
 }
 
 function cleanup() {
-  return del('build/**/styles.css', { force: true });
+  return del('build/**/styles', { force: true });
 }
 
 const build = gulp.series(clean, styles, html, images);
