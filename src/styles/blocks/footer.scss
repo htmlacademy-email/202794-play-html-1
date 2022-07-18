@@ -1,9 +1,9 @@
 
-.datetime {
+.footer {
   width: 100%;
 
   &__wrap {
-    padding: 0 16px;
+    padding: 0 16px 20px;
     font-size: 0;
   }
 
@@ -14,10 +14,10 @@
   }
 
   &__left {
-    width: 200px;
+    width: 284px;
   }
 
   &__right {
-    width: 368px;
+    width: 284px;
   }
 }
