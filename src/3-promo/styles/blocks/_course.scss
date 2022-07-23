@@ -1,0 +1,19 @@
+
+.course {
+  &__header {
+    padding: 16px 0;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 13px,
+      $line-height: 15px,
+      $color: #141414,
+    );
+    min-height: 45px;
+  }
+
+  &__footer {
+    padding-bottom: 25px;
+  }
+}

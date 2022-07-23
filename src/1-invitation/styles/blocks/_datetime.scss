@@ -1,0 +1,23 @@
+
+.datetime {
+  &__wrap {
+    padding: 12px 8px 32px;
+    font-size: 0;
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__left {
+    width: 200px;
+  }
+
+  &__right {
+    width: 336px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
