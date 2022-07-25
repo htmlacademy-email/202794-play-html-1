@@ -1,0 +1,21 @@
+
+.message {
+  &__wrap {
+    padding: 16px;
+    padding-top: 24px;
+  }
+
+  &__text,
+  &__link {
+    @include font(
+      $font-size: 11px,
+      $line-height: 13px,
+      $color: #141414,
+    );
+    text-decoration: none;
+  }
+
+  &__link {
+    color: #13d6c3;
+  }
+}

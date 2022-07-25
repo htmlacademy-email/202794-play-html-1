@@ -1,0 +1,31 @@
+
+.button {
+  @include font(
+    $font-size: 18px,
+    $line-height: 21px,
+    $color: #ffffff,
+  );
+
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+
+  text-align: center;
+  text-decoration: none;
+  background: #0b379b;
+  border-radius: 5px;
+
+  border-style: solid;
+  border-color: #0b379b;
+  border-width: 8px 16px;
+
+  &--action {
+    background: #ff4b33;
+    border-color: #ff4b33;
+  }
+
+  &--wellcome {
+    background: #ffb500;
+    border-color: #ffb500;
+  }
+}

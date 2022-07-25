@@ -1,0 +1,56 @@
+
+.banner {
+  background: #ff4b33;
+
+  &__head {
+    padding: 32px;
+    padding-bottom: 0;
+  }
+
+  &__footer {
+    padding: 23px;
+    padding-top: 0;
+  }
+
+  &__text {
+    @include font(
+      $font-size: 28px,
+      $line-height: 33px,
+      $color: #ffffff,
+    );
+  }
+
+  &__text + &__text {
+    margin-top: 24px;
+  }
+
+  &__accent {
+    @include font(
+      $font-size: 36px,
+      $line-height: 42px,
+      $color: #ffffff,
+    );
+    text-transform: uppercase;
+  }
+
+  &__value {
+    @include font(
+      $font-family: $font-family-tahoma,
+      $font-size: 56px,
+      $line-height: 84px,
+      $color: #ffffff,
+    );
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 126px;
+  }
+
+  &__label {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #ffffff,
+    );
+    padding-top: 8px;
+  }
+}

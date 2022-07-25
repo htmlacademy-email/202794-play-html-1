@@ -1,0 +1,17 @@
+
+.benefit {
+  &__bullet {
+    width: 40px;
+  }
+
+  &__body {
+    padding-left: 16px;
+  }
+
+  &__text {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

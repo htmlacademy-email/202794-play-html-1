@@ -1,0 +1,20 @@
+
+.disclaimer {
+  &__wrap {
+    padding-top: 44px;
+    padding-bottom: 32px;
+  }
+
+  &__row {
+    padding-top: 12px;
+  }
+
+  &__text,
+  &__link {
+    @include font(
+      $font-size: 11px,
+      $line-height: 13px,
+      $color: #828282,
+    );
+  }
+}

@@ -1,0 +1,22 @@
+
+@mixin font(
+  $font-family: $font-family-default,
+  $font-size,
+  $line-height,
+  $color: #000000
+) {
+  Margin: 0;
+
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  color: $color;
+
+  mso-style-priority: 100 !important;
+  mso-line-height-rule: exactly;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
