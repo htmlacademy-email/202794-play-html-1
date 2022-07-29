@@ -1,0 +1,23 @@
+
+.events {
+  &__header {
+    padding: 16px;
+    padding-top: 24px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 30px,
+      $line-height: 35px,
+      $color: #0b379b,
+    );
+  }
+
+  &__item {
+    padding: 8px 0;
+  }
+
+  &__more {
+    padding: 24px 0 16px;
+  }
+}

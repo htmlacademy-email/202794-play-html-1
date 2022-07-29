@@ -1,0 +1,16 @@
+
+.host {
+  &__img {
+    margin: 12px;
+    margin-top: 8px;
+  }
+
+  &__name,
+  &__about {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+  }
+}

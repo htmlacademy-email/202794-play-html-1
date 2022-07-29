@@ -1,0 +1,22 @@
+
+.footer {
+  &__wrap {
+    padding: 16px;
+    padding-bottom: 28px;
+    font-size: 0;
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__left {
+    width: 284px;
+  }
+
+  &__right {
+    width: 252px;
+  }
+}
