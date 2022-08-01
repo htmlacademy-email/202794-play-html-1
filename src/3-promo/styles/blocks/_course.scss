@@ -4,13 +4,21 @@
     padding: 16px 0;
   }
 
-  &__title {
+  &__title,
+  &__link {
     @include font(
       $font-size: 13px,
       $line-height: 15px,
       $color: #141414,
     );
+  }
+
+  &__title {
     min-height: 45px;
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__footer {

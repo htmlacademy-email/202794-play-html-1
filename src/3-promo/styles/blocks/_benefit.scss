@@ -9,9 +9,10 @@
   }
 
   &__text {
-    margin: 0;
-    color: #000000;
-    font-size: 18px;
-    line-height: 21px;
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
   }
 }
