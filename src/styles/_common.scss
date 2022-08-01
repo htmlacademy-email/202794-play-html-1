@@ -6,8 +6,10 @@ body {
   Margin: 0;
 
   font-family: $font-family-default;
-  -webkit-text-size-adjust: 100%;
+
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 b {
@@ -20,7 +22,7 @@ table {
   border-spacing: 0px;
 }
 
-table td {
+table td, img {
   Margin: 0;
   padding: 0;
 }

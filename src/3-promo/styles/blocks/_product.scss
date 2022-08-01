@@ -8,12 +8,17 @@
     padding: 16px 0 18px;
   }
 
-  &__title {
+  &__title,
+  &__link {
     @include font(
       $font-size: 16px,
       $line-height: 19px,
       $color: #000000,
     );
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__prices {
