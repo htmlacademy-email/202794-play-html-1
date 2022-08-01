@@ -1,0 +1,38 @@
+
+.calendar {
+  background: #ff4b33;
+  border-radius: 5px;
+
+  &__month {
+    @include font(
+      $font-size: 36px,
+      $line-height: 42px,
+      $color: #ffffff,
+    );
+    padding: 16px;
+    padding-bottom: 0;
+  }
+
+  &__date {
+    @include font(
+      $font-size: 96px,
+      $line-height: 108px,
+      $color: #ffffff,
+    );
+  }
+
+  &__time {
+    @include font(
+      $font-size: 36px,
+      $line-height: 42px,
+      $color: #ffffff,
+    );
+    padding: 16px;
+    padding-top: 0;
+  }
+
+  &__footer {
+    padding: 25px;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,19 @@
+
+.address {
+  &__header {
+    padding-top: 12px;
+    padding-bottom: 6px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #333333,
+    );
+  }
+
+  &__row {
+    padding: 4px 0;
+  }
+}

@@ -1,0 +1,27 @@
+
+.links {
+  &__header {
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #333333,
+    );
+  }
+
+  &__item {
+    padding: 4px 0;
+  }
+
+  &__link {
+    @include font(
+      $font-size: 14px,
+      $line-height: 16px,
+      $color: #141414,
+    );
+  }
+}

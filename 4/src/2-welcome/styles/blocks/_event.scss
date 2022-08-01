@@ -1,0 +1,43 @@
+
+.event {
+  border: 1px solid #02bad3;
+  border-radius: 15px;
+
+  &__head {
+    padding: 24px 16px 0;
+  }
+
+  &__title,
+  &__link {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #02bad3,
+    );
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__date {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #141414,
+    );
+    padding: 8px 16px;
+  }
+
+  &__about {
+    padding: 8px 16px 24px;
+  }
+
+  &__text {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #141414,
+    );
+  }
+}

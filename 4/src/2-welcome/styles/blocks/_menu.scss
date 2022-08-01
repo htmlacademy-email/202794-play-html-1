@@ -1,0 +1,29 @@
+
+.menu {
+  &__items {
+    padding-top: 36px;
+    padding-bottom: 18px;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 136px;
+  }
+
+  &__box {
+    padding: 8px 16px;
+  }
+
+  &__link {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+    );
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
