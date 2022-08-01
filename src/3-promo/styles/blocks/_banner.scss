@@ -7,6 +7,12 @@
     padding-bottom: 0;
   }
 
+  &__middle {
+    padding: 32px;
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
   &__footer {
     padding: 23px;
     padding-top: 0;
@@ -18,10 +24,6 @@
       $line-height: 33px,
       $color: #ffffff,
     );
-  }
-
-  &__text + &__text {
-    margin-top: 24px;
   }
 
   &__accent {

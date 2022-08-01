@@ -7,12 +7,17 @@
     padding: 24px 16px 0;
   }
 
-  &__title {
+  &__title,
+  &__link {
     @include font(
       $font-size: 24px,
       $line-height: 28px,
       $color: #02bad3,
     );
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__date {
