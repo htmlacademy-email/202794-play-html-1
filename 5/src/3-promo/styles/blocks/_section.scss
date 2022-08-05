@@ -1,0 +1,10 @@
+
+.section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+
+  &:last-child {
+    border-radius: 15px 15px 0 0;
+  }
+}

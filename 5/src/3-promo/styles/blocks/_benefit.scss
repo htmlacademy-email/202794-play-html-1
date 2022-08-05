@@ -1,0 +1,18 @@
+
+.benefit {
+  &__bullet {
+    width: 40px;
+  }
+
+  &__body {
+    padding-left: 16px;
+  }
+
+  &__text {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+  }
+}

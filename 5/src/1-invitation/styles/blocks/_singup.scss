@@ -1,0 +1,55 @@
+
+.singup {
+  &__header {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #141414,
+    );
+  }
+
+  &__avatar {
+    padding: 8px;
+    padding-bottom: 12px;
+  }
+
+  &__img {
+    border-radius: 44px;
+  }
+
+  &__text {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+  }
+
+  &__picture {
+    padding-top: 46px;
+    padding-bottom: 62px;
+  }
+
+  &__promo {
+    @include font(
+      $font-size: 30px,
+      $line-height: 35px,
+      $color: #13d6c3,
+    );
+  }
+
+  &__action {
+    padding: 16px;
+    padding-top: 24px;
+  }
+
+  &__footer {
+    padding: 8px;
+    padding-bottom: 20px;
+  }
+}

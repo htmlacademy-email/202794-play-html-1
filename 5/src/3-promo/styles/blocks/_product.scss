@@ -1,0 +1,49 @@
+
+.product {
+  &__picture {
+    padding-top: 20px;
+  }
+
+  &__header {
+    padding: 16px 0 18px;
+  }
+
+  &__title,
+  &__link {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #000000,
+    );
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__prices {
+    padding-bottom: 16px;
+  }
+
+  &__price {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+    padding: 0 14px;
+  }
+
+  &__past {
+    color: #828282;
+    text-decoration: line-through;
+  }
+
+  &__value {
+    color: #ff4b33;
+  }
+
+  &__footer {
+    padding-bottom: 20px;
+  }
+}

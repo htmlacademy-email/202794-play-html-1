@@ -1,0 +1,36 @@
+
+.agenda {
+  &__wrap {
+    padding-top: 9px;
+  }
+
+  &__header {
+    padding: 32px;
+    padding-top: 39px;
+    padding-bottom: 16px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 30px,
+      $line-height: 35px,
+      $color: #ff4b33,
+    );
+  }
+
+  &__row {
+    padding: 10px 16px;
+  }
+
+  &__text {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #141414,
+    );
+  }
+
+  &__footer {
+    padding: 24px 16px;
+  }
+}

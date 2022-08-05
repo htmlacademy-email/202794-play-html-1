@@ -1,0 +1,15 @@
+
+.hosts {
+  &__wrap {
+    padding: 0 8px;
+    padding-bottom: 24px;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: 184px;
+  }
+}

@@ -1,0 +1,10 @@
+
+.container {
+  Margin: 0 auto;
+  max-width: 600px;
+
+  &__wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

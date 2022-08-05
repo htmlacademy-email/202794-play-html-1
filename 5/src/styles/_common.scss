@@ -1,0 +1,38 @@
+
+body {
+  width: 100%;
+  padding: 0;
+  /* Capitalize first letter for Outlook */
+  Margin: 0;
+
+  font-family: $font-family-default;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+b {
+  font-weight: 700;
+}
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  border-spacing: 0px;
+}
+
+table td {
+  Margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  Margin: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+
+  -ms-interpolation-mode: bicubic;
+}
