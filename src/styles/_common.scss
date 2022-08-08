@@ -22,7 +22,17 @@ table {
   border-spacing: 0px;
 }
 
-table td, img {
+table td {
   Margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  Margin: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+
+  -ms-interpolation-mode: bicubic;
 }

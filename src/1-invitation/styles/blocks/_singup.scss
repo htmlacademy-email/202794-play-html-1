@@ -18,6 +18,10 @@
     padding-bottom: 12px;
   }
 
+  &__img {
+    border-radius: 44px;
+  }
+
   &__text {
     @include font(
       $font-size: 18px,
@@ -27,7 +31,8 @@
   }
 
   &__picture {
-    padding-bottom: 16px;
+    padding-top: 46px;
+    padding-bottom: 62px;
   }
 
   &__promo {

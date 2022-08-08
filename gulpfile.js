@@ -1,3 +1,5 @@
+const stream = require('stream');
+const path = require('path');
 const gulp = require('gulp');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -16,9 +18,36 @@ function server() {
   })
 }
 
+function cdn() {
+  const IMG_REGEXP = /\ssrc="(img\/.+?)"\s/gi;
+  const CDN_PATH = 'https://raw.githubusercontent.com/bini1988/202794-play-html-1/module2-task2/';
+
+  return new stream.Transform({
+    objectMode: true,
+    /**
+     * @param {import("vinyl")} file
+     */
+    transform(file, enc, cb) {
+      if (file.isNull()) {
+        return cb(null, file);
+      }
+      if (IS_PRODUCTION && file.isBuffer()) {
+        file.contents = Buffer.from(
+          file.contents.toString().replace(IMG_REGEXP, (_, filepath) =>
+            ` src="${CDN_PATH}${path.join(path.dirname(file.relative), filepath)}" `,
+          ),
+        );
+        return cb(null, file);
+      }
+      return cb(null, file);
+    },
+  });
+}
+
 function html() {
   return gulp.src(['src/**/*.html'])
     .pipe(gulp.dest(DEST_DIR))
+    .pipe(cdn())
     .pipe(inlineCss({
       applyStyleTags: true,
       applyLinkTags: true,
