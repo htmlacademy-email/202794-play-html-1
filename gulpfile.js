@@ -1,10 +1,12 @@
 const stream = require('stream');
+const fs = require('fs');
 const path = require('path');
 const gulp = require('gulp');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const inlineCss = require('gulp-inline-css');
+const groupCssMediaQueries = require('gulp-group-css-media-queries');
 
 const IS_PRODUCTION = (process.env.NODE_ENV || 'production') === 'production';
 const TEMP_DIR = 'tmp';
@@ -18,24 +20,18 @@ function server() {
   })
 }
 
-function cdn() {
-  const IMG_REGEXP = /\ssrc="(img\/.+?)"\s/gi;
-  const CDN_PATH = 'https://raw.githubusercontent.com/bini1988/202794-play-html-1/module2-task2/';
-
+function replace(pattern, replacer) {
   return new stream.Transform({
     objectMode: true,
-    /**
-     * @param {import("vinyl")} file
-     */
     transform(file, enc, cb) {
       if (file.isNull()) {
         return cb(null, file);
       }
-      if (IS_PRODUCTION && file.isBuffer()) {
+      if (file.isBuffer() && pattern) {
         file.contents = Buffer.from(
-          file.contents.toString().replace(IMG_REGEXP, (_, filepath) =>
-            ` src="${CDN_PATH}${path.join(path.dirname(file.relative), filepath)}" `,
-          ),
+          String(file.contents).replace(pattern, (...args) => {
+            return replacer(file, ...args);
+          }),
         );
         return cb(null, file);
       }
@@ -44,24 +40,59 @@ function cdn() {
   });
 }
 
+function replaceImgSrc() {
+  const PATTERN = /\ssrc="(img\/.+?)"\s/gi;
+  const CDN_PATH = 'https://raw.githubusercontent.com/bini1988/202794-play-html-1/master/';
+
+  /**
+   * @param {import("vinyl")} file
+   */
+  function replacer(file, _match, imgPath) {
+    const srcPath = path.join(path.dirname(file.relative), imgPath);
+
+    return ` src="${CDN_PATH}${srcPath}" `
+  }
+
+  return replace(IS_PRODUCTION && PATTERN, replacer);
+}
+
+function injectCss() {
+  const PATTERN = /<link\shref="(styles\/.+?)"\s.*\/>/gi;
+
+  /**
+   * @param {import("vinyl")} file
+   */
+  function replacer(file, _match, cssPath) {
+    const srcPath = path.join(DEST_DIR, path.dirname(file.relative), cssPath);
+
+    return `<style type="text/css">${fs.readFileSync(srcPath, 'utf-8')}</style>`
+  }
+
+  return replace(PATTERN, replacer);
+}
+
 function html() {
   return gulp.src(['src/**/*.html'])
     .pipe(gulp.dest(DEST_DIR))
-    .pipe(cdn())
+    .pipe(replaceImgSrc())
+    .pipe(injectCss())
     .pipe(inlineCss({
       applyStyleTags: true,
       applyLinkTags: true,
+      removeStyleTags: true,
+      removeLinkTags: true,
       preserveMediaQueries: true,
       applyWidthAttributes: false,
       applyTableAttributes: false,
-      removeHtmlSelectors: IS_PRODUCTION,
+      removeHtmlSelectors: false,
     }))
     .pipe(gulp.dest(DEST_DIR))
 }
 
 function styles() {
   return gulp.src(['src/**/styles/**/*.scss', '!src/sass/**'], { base: 'src' })
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ includePaths: ['src/styles'] }).on('error', sass.logError))
+    .pipe(groupCssMediaQueries())
     .pipe(gulp.dest(DEST_DIR))
 }
 
