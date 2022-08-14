@@ -1,0 +1,59 @@
+
+.header {
+  &__logo {
+    padding-top: 20px;
+  }
+
+  &__inner {
+    padding: 16px;
+    padding-top: 4px;
+    padding-bottom: 12px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 36px,
+      $line-height: 42px,
+      $color: #0b379b,
+    );
+  }
+
+  &__text,
+  &__link {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #ff4b33,
+    );
+  }
+
+  &__text {
+    max-width: 475px;
+  }
+
+  &__link {
+    padding: 0;
+    text-decoration: none;
+  }
+
+  @include mobile {
+    &__logo {
+      padding-top: 14px !important;
+    }
+
+    &__title {
+      @include font-override(
+        $font-size: 28px,
+        $line-height: 33px,
+      );
+    }
+
+    &__text,
+    &__link {
+      @include font-override(
+        $font-size: 16px,
+        $line-height: 19px,
+      );
+    }
+  }
+}

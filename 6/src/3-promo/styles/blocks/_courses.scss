@@ -1,0 +1,36 @@
+
+.courses {
+  &__header {
+    padding: 32px 16px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #141414,
+    );
+  }
+
+  &__wrap {
+    padding: 0 4px;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px 0;
+    width: 184px;
+  }
+
+  &__more {
+    padding-bottom: 16px;
+  }
+
+  @include mobile {
+    &__item {
+      width: 100% !important;
+    }
+  }
+}
