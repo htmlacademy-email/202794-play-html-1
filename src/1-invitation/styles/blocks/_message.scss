@@ -18,4 +18,10 @@
   &__link {
     color: #13d6c3;
   }
+
+  @include mobile {
+    &__wrap {
+      padding: 24px 0 22px !important;
+    }
+  }
 }

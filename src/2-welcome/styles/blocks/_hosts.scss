@@ -12,4 +12,10 @@
     padding: 0;
     width: 184px;
   }
+
+  @include mobile {
+    &__item {
+      width: 100% !important;
+    }
+  }
 }
