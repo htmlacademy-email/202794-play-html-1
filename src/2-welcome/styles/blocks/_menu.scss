@@ -1,8 +1,8 @@
 
 .menu {
   &__items {
-    padding-top: 36px;
-    padding-bottom: 18px;
+    padding: 36px 16px 18px;
+    text-align: left;
     font-size: 0;
   }
 
@@ -21,9 +21,32 @@
       $font-size: 16px,
       $line-height: 19px,
     );
+    padding: 0;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+  }
+
+  @include mobile {
+    &__items {
+      padding: 12px 0 24px !important;
+      text-align: center !important;
+    }
+
+    &__item {
+      width: auto !important;
+    }
+
+    &__box {
+      padding: 8px 13px !important;
+    }
+
+    &__link {
+      @include font-override(
+        $font-size: 18px,
+        $line-height: 21px,
+      );
+    }
   }
 }

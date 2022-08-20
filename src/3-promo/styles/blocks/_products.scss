@@ -28,4 +28,11 @@
     vertical-align: top;
     width: 284px;
   }
+
+  @include mobile {
+    &__left,
+    &__right {
+      width: 100% !important;
+    }
+  }
 }

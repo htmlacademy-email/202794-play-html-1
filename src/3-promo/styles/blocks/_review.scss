@@ -67,4 +67,11 @@
   &__footer {
     padding: 41px 16px 48px;
   }
+
+  @include mobile {
+    &__left,
+    &__right {
+      width: 100% !important;
+    }
+  }
 }

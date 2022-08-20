@@ -23,5 +23,27 @@
 
   &__right {
     width: 254px;
+    text-align: left;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @include mobile {
+    &__wrap {
+      padding: 12px 24px !important;
+    }
+
+    &__left,
+    &__right {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    &__right {
+      text-align: center !important;
+    }
   }
 }

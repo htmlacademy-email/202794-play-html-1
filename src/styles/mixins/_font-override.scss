@@ -1,0 +1,8 @@
+
+@mixin font-override(
+  $font-size,
+  $line-height,
+) {
+  font-size: $font-size !important;
+  line-height: $line-height !important;
+}

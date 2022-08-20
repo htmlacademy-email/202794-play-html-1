@@ -45,4 +45,12 @@
       $color: #ffffff,
     );
   }
+
+  @include mobile {
+    &__left,
+    &__right {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
 }

@@ -19,4 +19,11 @@
   &__right {
     width: 252px;
   }
+
+  @include mobile {
+    &__left,
+    &__right {
+      width: 100% !important;
+    }
+  }
 }
