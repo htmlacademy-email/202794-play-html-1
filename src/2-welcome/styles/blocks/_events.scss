@@ -24,4 +24,15 @@
   &__picture {
     padding: 57px 0 37px;
   }
+
+  @include mobile {
+    &__header {
+      padding-bottom: 8px !important;
+    }
+
+    &__picture {
+      padding: 50px 0 45px !important;
+      padding-left: 6px !important;
+    }
+  }
 }

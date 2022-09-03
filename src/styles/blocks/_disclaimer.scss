@@ -1,8 +1,7 @@
 
 .disclaimer {
   &__wrap {
-    padding-top: 44px;
-    padding-bottom: 32px;
+    padding: 44px 0 32px;
   }
 
   &__row {
@@ -18,9 +17,17 @@
     );
   }
 
+  &--welcome &__wrap {
+    padding: 20px 16px 48px;
+  }
+
   @include mobile {
     &__wrap {
       padding-top: 36px !important;
+    }
+
+    &--welcome &__wrap {
+      padding: 14px 0 34px !important;
     }
   }
 }

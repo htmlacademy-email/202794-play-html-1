@@ -47,10 +47,23 @@
   }
 
   @include mobile {
+    &__wrap {
+      padding: 0 19px !important;
+    }
+
+    &__header {
+      padding-top: 24px !important;
+    }
+
     &__left,
     &__right {
       width: 100% !important;
       padding: 0 !important;
+    }
+
+    &__right {
+      padding-top: 16px !important;
+      padding-bottom: 24px !important;
     }
   }
 }

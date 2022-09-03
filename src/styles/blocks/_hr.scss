@@ -1,0 +1,17 @@
+
+.hr {
+  &__wrap {
+    padding: 0 21px;
+  }
+
+  &__line {
+    height: 1px;
+    background: #e0e0e0;
+  }
+
+  @include mobile {
+    &__wrap {
+      padding: 0px !important;
+    }
+  }
+}

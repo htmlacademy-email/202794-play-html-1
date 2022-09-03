@@ -22,7 +22,11 @@
 
   @include mobile {
     &__wrap {
-      padding: 16px 8px !important;
+      padding: 16px 0 !important;
+    }
+
+    &--invitation &__wrap {
+      padding: 16px 8px 14px !important;
     }
 
     &__left,
@@ -31,7 +35,7 @@
     }
 
     &__right {
-      padding-top: 16px !important;
+      padding-top: 18px !important;
     }
   }
 }
