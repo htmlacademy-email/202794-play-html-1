@@ -17,4 +17,10 @@
       $color: #828282,
     );
   }
+
+  @include mobile {
+    &__wrap {
+      padding-top: 36px !important;
+    }
+  }
 }

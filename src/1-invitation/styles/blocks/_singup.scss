@@ -23,6 +23,8 @@
   }
 
   &__text {
+    padding: 0 16px;
+
     @include font(
       $font-size: 18px,
       $line-height: 21px,
@@ -31,8 +33,7 @@
   }
 
   &__picture {
-    padding-top: 46px;
-    padding-bottom: 62px;
+    padding: 46px 16px 62px;
   }
 
   &__promo {
@@ -49,7 +50,30 @@
   }
 
   &__footer {
-    padding: 8px;
-    padding-bottom: 20px;
+    padding: 8px 0 20px;
+  }
+
+  @include mobile {
+    &__picture {
+      padding-top: 41px !important;
+      padding-bottom: 58px !important;
+    }
+
+    &__promo {
+      padding-bottom: 8px !important;
+
+      @include font-override(
+        $font-size: 24px,
+        $line-height: 28px,
+      );
+    }
+
+    &__action {
+      padding-top: 16px !important;
+    }
+
+    &__button {
+      width: 175px !important;
+    }
   }
 }

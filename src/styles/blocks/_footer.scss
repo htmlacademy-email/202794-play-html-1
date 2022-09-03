@@ -21,9 +21,17 @@
   }
 
   @include mobile {
+    &__wrap {
+      padding: 16px 8px !important;
+    }
+
     &__left,
     &__right {
       width: 100% !important;
+    }
+
+    &__right {
+      padding-top: 16px !important;
     }
   }
 }
