@@ -1,0 +1,79 @@
+
+.singup {
+  &__header {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #141414,
+    );
+  }
+
+  &__avatar {
+    padding: 8px;
+    padding-bottom: 12px;
+  }
+
+  &__img {
+    border-radius: 44px;
+  }
+
+  &__text {
+    padding: 0 16px;
+
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+  }
+
+  &__picture {
+    padding: 46px 16px 62px;
+  }
+
+  &__promo {
+    @include font(
+      $font-size: 30px,
+      $line-height: 35px,
+      $color: #13d6c3,
+    );
+  }
+
+  &__action {
+    padding: 16px;
+    padding-top: 24px;
+  }
+
+  &__footer {
+    padding: 8px 0 20px;
+  }
+
+  @include mobile {
+    &__picture {
+      padding-top: 41px !important;
+      padding-bottom: 58px !important;
+    }
+
+    &__promo {
+      padding-bottom: 8px !important;
+
+      @include font-override(
+        $font-size: 24px,
+        $line-height: 28px,
+      );
+    }
+
+    &__action {
+      padding-top: 16px !important;
+    }
+
+    &__button {
+      width: 175px !important;
+    }
+  }
+}

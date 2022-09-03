@@ -1,0 +1,69 @@
+
+.greeting {
+  background: #0b379b;
+
+  &__wrap {
+    padding: 0 32px;
+    font-size: 0;
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__left {
+    width: 361px;
+  }
+
+  &__right {
+    width: 175px;
+  }
+
+  &__header {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  &__row {
+    padding: 10px 0;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #13d6c3,
+    );
+  }
+
+  &__text {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #ffffff,
+    );
+  }
+
+  @include mobile {
+    &__wrap {
+      padding: 0 19px !important;
+    }
+
+    &__header {
+      padding-top: 24px !important;
+    }
+
+    &__left,
+    &__right {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    &__right {
+      padding-top: 16px !important;
+      padding-bottom: 24px !important;
+    }
+  }
+}

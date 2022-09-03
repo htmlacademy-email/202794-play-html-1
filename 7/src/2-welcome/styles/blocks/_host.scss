@@ -1,0 +1,20 @@
+
+.host {
+  &__picture {
+    padding: 12px;
+    padding-top: 8px;
+  }
+
+  &__name,
+  &__about {
+    @include font(
+      $font-size: 18px,
+      $line-height: 21px,
+      $color: #000000,
+    );
+  }
+
+  &__about {
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,49 @@
+
+.header {
+  &__wrap {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-size: 0;
+    direction: rtl;
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+    direction: ltr;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  &__left {
+    width: 254px;
+  }
+
+  &__right {
+    width: 254px;
+    text-align: left;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @include mobile {
+    &__wrap {
+      padding: 12px 24px !important;
+    }
+
+    &__left,
+    &__right {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    &__right {
+      text-align: center !important;
+    }
+  }
+}

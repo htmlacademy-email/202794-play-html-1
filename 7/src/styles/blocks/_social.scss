@@ -1,0 +1,48 @@
+
+.social {
+  &__header {
+    padding-top: 12px;
+    padding-bottom: 6px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 16px,
+      $line-height: 19px,
+      $color: #333333,
+    );
+  }
+
+  &__label {
+    @include font(
+      $font-size: 11px,
+      $line-height: 24px,
+      $color: #000000,
+    );
+  }
+
+  &__wrap {
+    font-size: 0;
+    text-align: left;
+    padding: 12px 0;
+  }
+
+  &__items {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 8px;
+  }
+
+  &--align-right &__wrap {
+    text-align: right;
+  }
+
+  @include mobile {
+    &--align-right &__wrap {
+      text-align: center !important;
+    }
+  }
+}

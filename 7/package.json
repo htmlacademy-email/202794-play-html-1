@@ -1,0 +1,34 @@
+{
+  "name": "202794-play-html-1",
+  "version": "1.0.0",
+  "description": "* Студент: [Николай Карастелев](https://up.htmlacademy.ru/email/1/user/202794). * Наставник: `Неизвестно`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "clean": "gulp clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bini1988/202794-play-html-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bini1988/202794-play-html-1/issues"
+  },
+  "homepage": "https://github.com/bini1988/202794-play-html-1#readme",
+  "devDependencies": {
+    "browser-sync": "2.27.10",
+    "cross-env": "7.0.3",
+    "del": "6.1.1",
+    "gulp": "4.0.2",
+    "gulp-group-css-media-queries": "1.2.2",
+    "gulp-inline-css": "4.0.0",
+    "gulp-sass": "5.1.0",
+    "sass": "1.53.0"
+  },
+  "dependencies": {}
+}

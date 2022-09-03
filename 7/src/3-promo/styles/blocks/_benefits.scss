@@ -1,0 +1,35 @@
+
+.benefits {
+  &__header {
+    padding: 16px;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  &__title {
+    @include font(
+      $font-size: 24px,
+      $line-height: 28px,
+      $color: #141414,
+    );
+  }
+
+  &__item {
+    padding: 12px 16px;
+  }
+
+  &__footer {
+    padding: 17px 0;
+  }
+
+  @include mobile {
+    &__header {
+      padding-top: 40px !important;
+      padding-bottom: 28px !important;
+    }
+
+    &__footer {
+      padding: 10px 0 !important;
+    }
+  }
+}

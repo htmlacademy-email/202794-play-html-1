@@ -1,0 +1,12 @@
+
+.header {
+  &__wrap {
+    padding-top: 44px;
+  }
+
+  @include mobile {
+    &__wrap {
+      padding-top: 28px !important;
+    }
+  }
+}

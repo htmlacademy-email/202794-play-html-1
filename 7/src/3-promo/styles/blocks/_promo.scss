@@ -1,0 +1,35 @@
+
+.promo {
+  &__wrap {
+    font-size: 0;
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__left {
+    width: 284px;
+  }
+
+  &__right {
+    width: 284px;
+  }
+
+  &__picture {
+    padding: 0 9px;
+  }
+
+  @include mobile {
+    &__left,
+    &__right {
+      width: 100% !important;
+    }
+
+    &__picture {
+      padding: 0 !important;
+    }
+  }
+}
