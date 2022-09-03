@@ -24,4 +24,10 @@
   &__footer {
     padding-bottom: 25px;
   }
+
+  @include mobile {
+    &__header {
+      padding: 16px 32px !important;
+    }
+  }
 }

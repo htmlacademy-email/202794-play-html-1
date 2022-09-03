@@ -46,4 +46,10 @@
   &__footer {
     padding-bottom: 20px;
   }
+
+  @include mobile {
+    &__picture {
+      padding-top: 12px !important;
+    }
+  }
 }

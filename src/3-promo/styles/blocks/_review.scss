@@ -73,5 +73,23 @@
     &__right {
       width: 100% !important;
     }
+
+    &__body,
+    &__left,
+    &__right {
+      padding: 0px !important;
+    }
+
+    &__caption {
+      padding: 0 18px 17px !important;
+    }
+
+    &__text {
+      padding: 0 16px !important;
+    }
+
+    &__footer {
+      padding: 24px 16px 32px !important;
+    }
   }
 }

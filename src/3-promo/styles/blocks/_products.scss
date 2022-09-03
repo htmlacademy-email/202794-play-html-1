@@ -15,7 +15,7 @@
   }
 
   &__body {
-    padding-bottom: 23px;
+    padding-bottom: 28px;
   }
 
   &__wrap {
@@ -30,6 +30,15 @@
   }
 
   @include mobile {
+    &__header {
+      padding-top: 16px !important;
+      padding-bottom: 40px !important;
+    }
+
+    &__body {
+      padding-bottom: 12px !important;
+    }
+
     &__left,
     &__right {
       width: 100% !important;
