@@ -11,17 +11,60 @@
   <title>HTML Academy: PlayHTML. Приглашение на курс</title>
   <style type="text/css">
 @media only screen and (max-width: 600px) {
+  .disclaimer__wrap {
+    padding-top: 36px !important;
+  }
+  .disclaimer--welcome .disclaimer__wrap {
+    padding: 14px 0 34px !important;
+  }
+  .disclaimer--promo .disclaimer__wrap {
+    padding: 10px 20px 40px 14px !important;
+  }
+  .footer__wrap {
+    padding: 16px 0 !important;
+  }
+  .footer--invitation .footer__wrap {
+    padding: 16px 8px 14px !important;
+  }
+  .footer--promo .footer__wrap {
+    padding: 12px 16px 18px !important;
+  }
   .footer__left,
   .footer__right {
     width: 100% !important;
   }
+  .footer__right {
+    padding-top: 18px !important;
+  }
+  .hr__wrap {
+    padding: 0px !important;
+  }
   .social--align-right .social__wrap {
     text-align: center !important;
+  }
+  .agenda__wrap {
+    padding: 24px 16px !important;
+  }
+  .agenda__header {
+    padding: 24px 0 0 !important;
+  }
+  .agenda__li {
+    padding-top: 16px !important;
+  }
+  .agenda__mark {
+    padding-top: 6px !important;
+    padding-right: 20px !important;
+  }
+  .datetime__wrap {
+    padding: 4px 16px 14px !important;
   }
   .datetime__left,
   .datetime__right {
     width: 100% !important;
     padding: 0 !important;
+  }
+  .datetime__right {
+    padding-top: 12px !important;
   }
   .header__logo {
     padding-top: 14px !important;
@@ -37,6 +80,21 @@
   }
   .message__wrap {
     padding: 24px 0 22px !important;
+  }
+  .singup__picture {
+    padding-top: 41px !important;
+    padding-bottom: 58px !important;
+  }
+  .singup__promo {
+    padding-bottom: 8px !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+  .singup__action {
+    padding-top: 16px !important;
+  }
+  .singup__button {
+    width: 175px !important;
   }
 }
 </style>
@@ -104,12 +162,12 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="header__inner" align="center" style="Margin: 0; padding: 16px; padding-bottom: 12px; padding-top: 4px;">
+                          <td class="header__inner" align="center" style="Margin: 0; padding: 4px 20px 12px;">
                             <h2 class="header__title" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #0b379b; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 36px; font-style: normal; font-weight: normal; line-height: 42px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;"><b style="font-weight: 700;">Хотите научиться <span style="white-space: nowrap;">web-разработке</span>?</b></h2>
                           </td>
                         </tr>
                         <tr>
-                          <td class="header__inner" align="center" style="Margin: 0; padding: 16px; padding-bottom: 12px; padding-top: 4px;">
+                          <td class="header__inner" align="center" style="Margin: 0; padding: 4px 20px 12px;">
                             <p class="header__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #ff4b33; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 24px; font-style: normal; font-weight: normal; line-height: 28px; max-width: 475px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;"><b style="font-weight: 700;">Приглашаем Вас на&nbsp;бесплатный вебинар <a class="header__link" target="_blank" href="https://htmlacademy.ru/vebinar/about" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #ff4b33; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 24px; font-style: normal; font-weight: normal; line-height: 28px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; padding: 0; text-decoration: none;"><b style="font-weight: 700;">&laquo;Тренды Frontend-разработки 2020&raquo;</b></a></b></p>
                           </td>
                         </tr>
@@ -194,7 +252,7 @@
                                         <img src="https://raw.githubusercontent.com/bini1988/202794-play-html-1/master/1-invitation/img/bullet_1.png" alt="Пукт 1" width="12" height="12" style="-ms-interpolation-mode: bicubic; Margin: 0; border: 0; display: block; height: auto; max-width: 100%; outline: none; text-decoration: none;">
                                       </td>
                                       <td style="Margin: 0; padding: 0;">
-                                        <p class="agenda__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #ffffff; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;">Кто такой frontend-разработчик?</p>
+                                        <p class="agenda__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #ffffff; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;">Кто такой <span class="nowrap" style="white-space: nowrap;">frontend-разработчик</span>?</p>
                                       </td>
                                     </tr>
                                   </table>
@@ -247,21 +305,21 @@
                         </tr>
                         <tr>
                           <td align="center" style="Margin: 0; padding: 0;">
-                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;"><b style="font-weight: 700;">Иван Васильев</b></p>
+                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; padding: 0 16px;"><b style="font-weight: 700;">Иван Васильев</b></p>
                           </td>
                         </tr>
                         <tr>
                           <td align="center" style="Margin: 0; padding: 0;">
-                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;">Frontend-разработчик компании Cats Development</p>
+                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; padding: 0 16px;">Frontend-разработчик компании Cats Development</p>
                           </td>
                         </tr>
                         <tr>
                           <td class="singup__action" align="center" style="Margin: 0; padding: 16px; padding-top: 24px;">
-                            <a class="button button--action" target="_blank" href="https://htmlacademy.ru/vebinar/about" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; background: #ff4b33; border-color: #ff4b33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #ffffff; display: inline-block; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-align: center; text-decoration: none; vertical-align: top; width: auto;">Зарегистрироваться на&nbsp;вебинар</a>
+                            <a class="singup__button button button--action" target="_blank" href="https://htmlacademy.ru/vebinar/about" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; background: #ff4b33; border-color: #ff4b33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #ffffff; display: inline-block; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-align: center; text-decoration: none; vertical-align: top; width: auto;">Зарегистрироваться на&nbsp;вебинар</a>
                           </td>
                         </tr>
                         <tr>
-                          <td class="singup__picture" align="center" style="Margin: 0; padding: 0; padding-bottom: 62px; padding-top: 46px;">
+                          <td class="singup__picture" align="center" style="Margin: 0; padding: 46px 16px 62px;">
                             <img src="https://raw.githubusercontent.com/bini1988/202794-play-html-1/master/1-invitation/img/proposal.png" alt="Примите участие в вебинаре" width="278" height="186" style="-ms-interpolation-mode: bicubic; Margin: 0; border: 0; display: block; height: auto; max-width: 100%; outline: none; text-decoration: none;">
                           </td>
                         </tr>
@@ -276,14 +334,14 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="singup__footer" align="center" style="Margin: 0; padding: 8px; padding-bottom: 20px;">
-                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;">Количество мест на&nbsp;вебинаре ограничено.</p>
+                          <td class="singup__footer" align="center" style="Margin: 0; padding: 8px 0 20px;">
+                            <p class="singup__text" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; padding: 0 16px;">Количество мест на&nbsp;вебинаре ограничено.</p>
                           </td>
                         </tr>
                       </table>
 
                       <!-- Footer -->
-                      <table class="footer" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table class="footer footer--invitation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td class="footer__wrap" align="left" style="Margin: 0; font-size: 0; padding: 16px; padding-bottom: 28px;">
                             <!-- Contacts -->
@@ -428,7 +486,7 @@
                 <!-- Disclaimer -->
                 <table class="disclaimer" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                   <tr>
-                    <td class="disclaimer__wrap" style="Margin: 0; padding: 0; padding-bottom: 32px; padding-top: 44px;">
+                    <td class="disclaimer__wrap" style="Margin: 0; padding: 44px 0 32px;">
                       <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td class="disclaimer__row" align="left" style="Margin: 0; padding: 0; padding-top: 12px;">

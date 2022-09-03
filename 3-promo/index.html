@@ -11,14 +11,55 @@
   <title>HTML Academy: PlayHTML. Акция</title>
   <style type="text/css">
 @media only screen and (max-width: 600px) {
+  .disclaimer__wrap {
+    padding-top: 36px !important;
+  }
+  .disclaimer--welcome .disclaimer__wrap {
+    padding: 14px 0 34px !important;
+  }
+  .disclaimer--promo .disclaimer__wrap {
+    padding: 10px 20px 40px 14px !important;
+  }
+  .footer__wrap {
+    padding: 16px 0 !important;
+  }
+  .footer--invitation .footer__wrap {
+    padding: 16px 8px 14px !important;
+  }
+  .footer--promo .footer__wrap {
+    padding: 12px 16px 18px !important;
+  }
   .footer__left,
   .footer__right {
     width: 100% !important;
   }
+  .footer__right {
+    padding-top: 18px !important;
+  }
+  .hr__wrap {
+    padding: 0px !important;
+  }
   .social--align-right .social__wrap {
     text-align: center !important;
   }
+  .benefits__header {
+    padding-top: 40px !important;
+    padding-bottom: 28px !important;
+  }
+  .benefits__footer {
+    padding: 10px 0 !important;
+  }
+  .course__header {
+    padding: 16px 32px !important;
+  }
+  .courses__header {
+    padding-bottom: 4px !important;
+  }
+  .courses__wrap {
+    padding: 0 0 20px !important;
+  }
   .courses__item {
+    padding: 20px 0 !important;
     width: 100% !important;
   }
   .header__wrap {
@@ -32,6 +73,16 @@
   .header__right {
     text-align: center !important;
   }
+  .product__picture {
+    padding-top: 12px !important;
+  }
+  .products__header {
+    padding-top: 16px !important;
+    padding-bottom: 40px !important;
+  }
+  .products__body {
+    padding-bottom: 12px !important;
+  }
   .products__left,
   .products__right {
     width: 100% !important;
@@ -40,9 +91,26 @@
   .promo__right {
     width: 100% !important;
   }
+  .promo__picture {
+    padding: 0 !important;
+  }
   .review__left,
   .review__right {
     width: 100% !important;
+  }
+  .review__body,
+  .review__left,
+  .review__right {
+    padding: 0px !important;
+  }
+  .review__caption {
+    padding: 0 18px 17px !important;
+  }
+  .review__text {
+    padding: 0 16px !important;
+  }
+  .review__footer {
+    padding: 24px 16px 32px !important;
   }
 }
 </style>
@@ -224,7 +292,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="products__body" align="center" style="Margin: 0; padding: 0; padding-bottom: 23px;">
+                          <td class="products__body" align="center" style="Margin: 0; padding: 0; padding-bottom: 28px;">
                             <table class="products__items" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                               <tr>
                                 <td class="products__wrap" align="center" style="Margin: 0; font-size: 0; padding: 0;">
@@ -334,7 +402,7 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td class="product__header" align="center" style="Margin: 0; padding: 16px 0 18px;">
+                                              <td class="product__header" align="center" style="Margin: 0; padding: 16px 0 18px; padding-top: 11px;">
                                                 <h3 class="product__title" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; line-height: 19px; mso-line-height-rule: exactly; mso-style-priority: 100 !important;">
                                                   <a class="product__link" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss" style="-moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; Margin: 0; color: #000000; font-family: 'trebuchet ms', tahoma, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; line-height: 19px; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none;">
                                                     <b style="font-weight: 700;">Photoshop для верстальщика</b>
@@ -675,7 +743,7 @@
                   <tr>
                     <td style="Margin: 0; padding: 0;">
                       <!-- Footer -->
-                      <table class="footer" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table class="footer footer--promo" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td class="footer__wrap" style="Margin: 0; font-size: 0; padding: 16px; padding-bottom: 22px; padding-top: 20px;" align="left">
                             <!-- Contacts -->
@@ -816,10 +884,10 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="Margin: 0; padding: 0 5px;">
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <td align="center" style="Margin: 0; padding: 0;">
+                      <table class="hr" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr align="center">
-                          <td style="Margin: 0; border-bottom: 1px solid #e0e0e0; padding: 0;"></td>
+                          <td class="hr__wrap" style="Margin: 0; padding: 0;"><div class="hr__line" style="background: #e0e0e0; height: 1px;"></div></td>
                         </tr>
                       </table>
                     </td>
@@ -827,7 +895,7 @@
                   <tr>
                     <td style="Margin: 0; padding: 0;">
                       <!-- Disclaimer -->
-                      <table class="disclaimer" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                      <table class="disclaimer disclaimer--promo" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                         <tr>
                           <td class="disclaimer__wrap" style="Margin: 0; padding: 16px; padding-bottom: 48px; padding-top: 20px;">
                             <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
