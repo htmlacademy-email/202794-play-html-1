@@ -36,4 +36,23 @@
       $color: #ffffff,
     );
   }
+
+  @include mobile {
+    &__wrap {
+      padding: 24px 16px !important;
+    }
+
+    &__header {
+      padding: 24px 0 0 !important;
+    }
+
+    &__li {
+      padding-top: 16px !important;
+    }
+
+    &__mark {
+      padding-top: 6px !important;
+      padding-right: 20px !important;
+    }
+  }
 }

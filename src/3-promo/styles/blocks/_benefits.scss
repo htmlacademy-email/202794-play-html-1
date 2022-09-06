@@ -21,4 +21,15 @@
   &__footer {
     padding: 17px 0;
   }
+
+  @include mobile {
+    &__header {
+      padding-top: 40px !important;
+      padding-bottom: 28px !important;
+    }
+
+    &__footer {
+      padding: 10px 0 !important;
+    }
+  }
 }

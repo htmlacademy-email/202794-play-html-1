@@ -29,7 +29,16 @@
   }
 
   @include mobile {
+    &__header {
+      padding-bottom: 4px !important;
+    }
+
+    &__wrap {
+      padding: 0 0 20px !important;
+    }
+
     &__item {
+      padding: 20px 0 !important;
       width: 100% !important;
     }
   }
